@@ -1,10 +1,17 @@
-const validateBody = require('../middleware/middleware.js');
-const validateId = require('../middleware/middleware.js')
+const validateBody = require('../middleware/validateBody.js');
+const validateId = require('../middleware/validateId.js')
 const express = require('express');
 const db = require('../helpers/projectModel');
 const router = express.Router();
 router.use(express.json())
 
+
+router.get('/projects/', (req, res) => {
+    db.getter()
+        .then(response => {
+        res.status(200).json(response)
+    })
+})
 
 router.get('/projects/:id', validateId, (req, res) => {
     db.get(req.params.id)
