@@ -18,9 +18,7 @@ export const SingleProject = (props) => {
             <p>{props.singleProject.name}</p>
             <p>{props.singleProject.description}</p>
             {
-                props.singleProject.forEach(project => {
-                    return <p>{project.actions}</p>
-                })
+                props.singleProject.actions.forEach(action => <p>{action}</p> )
             }
         </Div>
     )
