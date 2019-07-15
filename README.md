@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Middleware and API request handling ooh and error handling
+
 - [ ] Describe Middleware?
+
+Functions that sit inbetween the different sub applications of your backend
 
 - [ ] Describe a Resource?
 
+Something you can provide your client via API, also something a client could pass back to API
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+Response codes and messages, whether it be succesful or errors
+
 - [ ] How can we partition our application into sub-applications?
+
+Unsure what is meant here.. I would split my code up in my file structure to keep middleware seperate from api db functions and route them together. also would split api request handlers to keep files smaller and more readable
 
 ## Project Setup
 
